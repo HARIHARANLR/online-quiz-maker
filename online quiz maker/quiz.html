@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Welcome to Online Quiz</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <style>
+        h1{
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: chocolate;
+            background-image:url('quiz2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+<div class="quiz-container">
+    <h2>Geography Quiz</h2>
+    <form id="quiz-form">
+        <div class="question">
+            <b>What is the capital of France?</b>
+            <div class="options">
+                <label><input type="radio" name="question1" value="paris"> Paris</label>
+                <label><input type="radio" name="question1" value="london"> London</label>
+                <label><input type="radio" name="question1" value="berlin"> Berlin</label>
+                <label><input type="radio" name="question1" value="madrid"> Madrid</label>
+            </div>
+        </div>
+        <div class="question">
+            
+            <b>What is the capital of Japan?</b>
+            <div class="options">
+                <label><input type="radio" name="question2" value="tokyo"> Tokyo</label>
+                <label><input type="radio" name="question2" value="beijing"> Beijing</label>
+                <label><input type="radio" name="question2" value="seoul"> Seoul</label>
+                <label><input type="radio" name="question2" value="moscow"> Moscow</label>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+</div>
+</body>
+</html>
